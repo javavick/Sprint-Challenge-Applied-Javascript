@@ -28,4 +28,7 @@ axios
     response.data.topics.forEach((topic) => {
       document.querySelector(".topics").appendChild(tabCreator(topic));
     });
+  })
+  .catch((error) => {
+    console.log("Error:", error);
   });
